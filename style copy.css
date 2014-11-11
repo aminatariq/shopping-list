@@ -26,6 +26,7 @@ ol, ul {
     background-color: white;
     border-radius: 1.25em;
     height: 100%;
+    font-size: 1.00em;
     margin-top: 1.00em;
     text-align: center;
 }
@@ -42,7 +43,7 @@ ol, ul {
     margin: 0.938em auto;
     padding: 0 0.938em;
     text-align: center;
-    width: 70%;
+    width: 50%;
 }
 
 input {
@@ -52,23 +53,42 @@ input {
 .list {
     font-family: 'Reenie Beanie', cursive;
     font-size: 2.333em;
+    text-align: center;
     cursor: pointer;
 }
 
-.delete {
-    float: right;
-    margin-top: 0.200em;
-    padding-right: 1.00em
-}
-
-.checked, .unchecked {
-    float: left;
-    margin-top: 0.20em;
+.list img {
+    padding-right: 0.938em
 }
 
 .resolved {
     text-decoration:line-through;
     color:#9CA9AD;
+}
+
+.checked {
+    margin-top: 0em;
+    margin-right: 0em;
+    height: 1.250em;
+    width: 1.250em;
+    background: url('img/checked-box.png') 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.unchecked {
+    margin-top: 0em;
+    margin-right: 0em;
+    height: 1.250em;
+    width: 1.250em;
+    background: url('img/unchecked-box.png') 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.delete {
+    float: right;
+    margin-top: 0.200em;
 }
 
 /* FOOTER */
