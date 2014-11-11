@@ -33,9 +33,9 @@ ol, ul {
     border-radius: 0.938em;
     color: white;
     display: inline-block;
-    font-size: 12pt;
+    font-size: 1.00em;
     height: 2em;
-    line-height: 24pt;
+    line-height: 2.00em;
     margin: 0.938em auto;
     padding: 0 0.938em;
     text-align: center;
@@ -85,9 +85,9 @@ button {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-size: 12pt;
+    font-size: 1.00em;
     height: 2em;
-    line-height: 24pt;
+    line-height: 2.00em;
     margin: 0.938em auto;
     padding: 0 0.938em;
     text-align: center;
