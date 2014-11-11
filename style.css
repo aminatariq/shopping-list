@@ -30,14 +30,14 @@ ol, ul {
 #add-items {
     background-color: #84ECB1;
     border: none;
-    border-radius: 15px;
+    border-radius: 0.938em;
     color: white;
     display: inline-block;
     font-size: 12pt;
-    height: 30px;
+    height: 2em;
     line-height: 24pt;
-    margin: 15px auto;
-    padding: 0 15px;
+    margin: 0.938em auto;
+    padding: 0 0.938em;
     text-align: center;
     width: 50%;
 }
@@ -48,13 +48,13 @@ input {
 
 .list {
     font-family: 'Reenie Beanie', cursive;
-    font-size: 35px;
+    font-size: 2.333em;
     text-align: center;
     cursor: pointer;
 }
 
 .list img {
-    padding-right: 15px
+    padding-right: 0.938em
 }
 
 .resolved {
@@ -64,32 +64,32 @@ input {
 
 .checked {
     float: left;
-    margin-top: 3px;
+    margin-top: 0.200em;
 }
 
 .delete {
     float: right;
-    margin-top: 3px;
+    margin-top: 0.200em;
 }
 
 h2 {
     font-family: 'Oxygen', sans-serif;
     color:#29A15D;
-    font-size: 12px;
+    font-size: 0.750em;
 }
 
 button {
     background-color: #84ECB1;
     border: none;
-    border-radius: 15px;
+    border-radius: 0.938em;
     color: white;
     cursor: pointer;
     display: inline-block;
     font-size: 12pt;
-    height: 30px;
+    height: 2em;
     line-height: 24pt;
-    margin: 15px auto;
-    padding: 0 15px;
+    margin: 0.938em auto;
+    padding: 0 0.938em;
     text-align: center;
 }
 
