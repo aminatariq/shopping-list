@@ -1,51 +1,27 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Shopping List by Amina Tariq</title>
-	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>
-	<script type="text/javascript" src="js/function.js"></script>
-</head>
-<body>
-<div class="main">
-	<div class="heading">
-	<img class="logo" src="img/shopping-list-logo.png" alt="Logo Image">
-		<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="Enter items to list...">
-	</div>
-		<div class="list">
-			<ul>
-				<li class="resolved">
-					<img class="checked" src="img/checked-box.png">
-						<span>Ice Cream</span>
-							<img class="delete" src="img/delete.png">
-								</li>
-				<li class="resolved">
-					<img class="checked" src="img/checked-box.png">
-						<span>Milk</span>
-							<img class="delete" src="img/delete.png">
-								</li>
-				<li class="resolved">
-					<img class="checked" src="img/checked-box.png">
-						<span>Bread</span>
-							<img class="delete" src="img/delete.png">
-								</li>
-				<li class="outstanding">
-					<img class="unchecked" src="img/unchecked-box.png">
-						<span>Peanut Butter</span>
-							<img class="delete" src="img/delete.png">
-								</li>
-				<li class="outstanding">
-					<img class="unchecked" src="img/unchecked-box.png">
-						<span>Jam</span>
-							<img class="delete" src="img/delete.png">
-								</li>
-			</ul>
-		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><style type="text/css"></style>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Shopping List by Amina Tariq</title>
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	</head>
+	<body>
+		<div class="container">
+			<div class="input">
+			<img class="logo" src="img/shopping-list-logo.png" alt="Logo Image">
+			<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="Enter items to list...">
+				<ul id="list" class="ui-sortable">
+					<li class="items"><div class="box"></div><span>Ice Cream</span><img class="delete" src="img/delete.png"></li>
+					<li class="items"><div class="box"></div><span>Bread</span><img class="delete" src="img/delete.png"></li>
+					<li class="items"><div class="box"></div><span>Milk</span><img class="delete" src="img/delete.png"></li>
+					<li class="items"><div class="box"></div><span>Peanut Butter</span><img class="delete" src="img/delete.png"></li>
+					<li class="items"><div class="box"></div><span>Jam</span><img class="delete" src="img/delete.png"></li></ul>
+		</div>	
 		<div class="instructions">
 			<h2>Drag items to re-order</h2>
 			<button name="startover" id="startover" class="button">

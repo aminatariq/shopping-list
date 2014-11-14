@@ -10,22 +10,21 @@ ol, ul {
 /* HEADING */
 
 .logo {
-    padding-top: 1.5em;
-    padding-right: 1.5em;
-    padding-bottom: 1.5em;
-    padding-left: 1.5em;
+    padding-top: 0.50em;
+    padding-right: 1.50em;
+    padding-bottom: 0.50em;
+    padding-left: 1.50em;
 }
 
 /* LIST */
 
-.main {
+.container {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     min-width: 360px;
     background-color: white;
     border-radius: 1.25em;
-    height: 100%;
     margin-top: 1.00em;
     text-align: center;
 }
@@ -37,7 +36,7 @@ ol, ul {
     color: white;
     display: inline-block;
     font-size: 1.00em;
-    height: 2em;
+    height: 2.00em;
     line-height: 2.00em;
     margin: 0.938em auto;
     padding: 0 0.938em;
@@ -49,32 +48,46 @@ input {
     -webkit-text-fill-color: white;
 }
 
-.list {
+.input {
     font-family: 'Reenie Beanie', cursive;
+}
+
+.input span {
+    cursor: pointer;
     font-size: 2.333em;
 }
 
-.list span {
+.box {
+    float: left;
+    margin-top: 0.188em;
+    margin-right: 1.875em;
+    height: 1.063em;
+    width: 1.063em;
+    background: url('img/box-to-check.png') 0 0;
     cursor: pointer;
+
+}
+
+.checked {
+    height: 18px;
+    float: left;
+    margin-right: 1.875em;
+    cursor: pointer;
+    background: url('img/box-to-check.png') 1.063em 0;
+}
+
+.strike {
+    text-decoration: line-through;
+    color:#9CA9AD;
 }
 
 .delete {
     float: right;
     margin-top: 0.200em;
-    padding-right: 1.00em;
+    padding-right: 1.875em;
     cursor: pointer;
 }
 
-.checked, .unchecked {
-    float: left;
-    margin-top: 0.20em;
-    cursor: pointer;
-}
-
-.resolved {
-    text-decoration:line-through;
-    color:#9CA9AD;
-}
 
 /* FOOTER */
 
@@ -102,4 +115,3 @@ button {
 button:hover{
   background-color: #188E57;
 }
-
