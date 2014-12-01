@@ -1,17 +1,23 @@
 $(document).ready(function(){
 
 /* use enter to add list items */
-    $('#item').keyup(function(event){
-        if(event.keyCode == 13) {
-            $('#add').click();
-        };
-    }); 
+    $('#add-item').on("keypress", function(event){
+        if (event.keyCode == 13) {
+        var item = $("#add-item").val();
+        $('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + item + '</span><img class="delete" src="img/delete.png"/>');
+  }
+});
 
 /* add list items */
     $('#add').click(function(){
+        var txtbox = document.getElementById('item');
+        var txtval = txtbox.value;
+        event.preventDefault();
 
-     {
-        $('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><img class="delete" src="img/delete.png"/>');
+        if(!$.trim($('#item').val())) {
+            alert('Please enter text to add to the list');
+        } else {
+            $('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><img class="delete" src="img/delete.png"/>');
 
         document.getElementById('item').value = '';
         };
