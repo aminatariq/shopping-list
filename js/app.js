@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 /* use enter to add list items */
-    $('#add-item').on("keypress", function(event){
+    $('#add-items').on("keypress", function(event){
         if (event.keyCode == 13) {
-        var item = $("#add-item").val();
+        var item = $("#add-items").val();
         $('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + item + '</span><img class="delete" src="img/delete.png"/>');
   }
 });
